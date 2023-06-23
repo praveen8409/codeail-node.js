@@ -8,4 +8,10 @@ console.log('Router is loades');
 // this is create a url to access homeController in browser
 router.get('/',homeController.home);
 
+//if any users's request come with /users url then it will go to inside users.js routs. 
+router.use('/users', require('./users'));
+
+//for any further routes access from here
+//router.use('/routName', require('./routFile));
+
 module.exports = router;
