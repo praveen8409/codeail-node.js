@@ -3,10 +3,28 @@ const User = require('../models/user');
 module.exports.profile = function (req, res) {
     // return res.end('<h1>User Profile </h1>');
 
-    // This is sending title value to user_profile.ejs file for home page
-    return res.render('user_profile', {
-        title: "Profile"
-    });
+    // // This is sending title value to user_profile.ejs file for home page
+    // return res.render('user_profile', {
+    //     title: "Profile"
+    // });
+
+
+    // put a check for access the user profile page. Without login we can not access  user profile
+
+    if(req.cookies.user_id){
+        User.findById(req.cookies.user_id, function(err, user){
+            if(user){
+                return res.render('user_profile',{
+                    title : "User Profile",
+                    user : user
+                })
+            }else{
+                return res.redirect('/users/sign-in');
+            }
+        });
+    }else{
+        return res.redirect('/users/sign-in');
+    }
 }
 
 // render the signUp page
