@@ -6,3 +6,18 @@ module.exports.profile = function(req, res){
         title : "Profile"
     });
 }
+
+// render the signUp page
+module.exports.signUp = function(req, res){
+    return res.render('user_sign_up',{
+        title : 'codeial | signUp'
+    });
+}
+
+
+// render the signIn page
+module.exports.signIn = function(req, res){
+    return res.render('user_sign_in',{
+        title : 'codeial | signIn'
+    });
+}
