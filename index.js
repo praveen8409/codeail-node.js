@@ -1,7 +1,11 @@
 const express = require('express');
+const cookeParser = require('cookie-parser');// create cookie
 const router = require('./routes');
 const app = express();
 const port = 8000;
+
+app.use(express.urlencoded());
+app.use(cookeParser());
 
 const db = require('./config/mongoose');
 
