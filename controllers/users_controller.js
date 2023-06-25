@@ -26,7 +26,7 @@ module.exports.signUp = function (req, res) {
 
 // render the signIn page
 module.exports.signIn = function (req, res) {
-    
+
     //  if user already signed in but they want to sign up again without logout then they redirect back to profile page
     if(req.isAuthenticated()){
         return res.redirect('/users/profile');
@@ -67,3 +67,14 @@ module.exports.create = function (req, res) {
 module.exports.createSession = function (req, res) {
     return res.redirect('/');
 }
+
+// This is for Sign-Out 
+module.exports.destroySession = function(req, res){
+    req.logout(function(err) {
+      if (err) {
+        console.log(err);
+      }
+      return res.redirect('/');
+    });
+  }
+  
