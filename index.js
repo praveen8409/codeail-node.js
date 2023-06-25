@@ -12,6 +12,8 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 
+const MongoStore = require('connect-mongo'); // this is for connect mongodb for store cookies
+
 // This is for use layouts in pages 
 const expressLayouts = require('express-ejs-layouts');
 
@@ -29,14 +31,22 @@ app.set('layout extractScripts', true);
 app.set('view engine','ejs');
 app.set('views', './views');
 
+//mongo store is used to store the session cookies in db
 app.use(session({name : 'codeial',
     // todo change the secret before deployment in product mode
-
+    
     secret : 'blabla',
     saveUninitialized : false,
     resave : false,
     cookie : {
         maxAge : (1000 * 60 * 100)
+    },
+    store: MongoStore.create({
+        mongoUrl: 'mongodb://127.0.0.1/codeial_development',
+        autoRemove: 'disabled'
+    }),
+    function(err){
+        console.log(err||'connect-mongo-db');
     }
 }));
 
