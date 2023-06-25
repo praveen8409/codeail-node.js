@@ -1,6 +1,6 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');// create cookie
-const router = require('./routes');
+// const router = require('./routes'); This line written by mistake thats why i am getting error while i am trying to authenticate through passport
 const app = express();
 const port = 8000;
 
@@ -42,6 +42,8 @@ app.use(session({name : 'codeial',
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(passport.setAuthenticatedUser);
 
 // use express router
 app.use('/',require('./routes'));
