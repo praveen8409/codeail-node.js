@@ -11,6 +11,7 @@ router.get('/',homeController.home);
 //if any users's request come with /users url then it will go to inside users.js routs. 
 router.use('/users', require('./users'));
 router.use('/posts',require('./posts'));
+router.use('/comments',require('./comments'));
 
 //for any further routes access from here
 //router.use('/routName', require('./routFile));
