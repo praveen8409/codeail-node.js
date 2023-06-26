@@ -1,8 +1,32 @@
-<h1>
+<!-- <h1>
     User SignIn Page
 </h1>
 <form action="/users/create-session" method="post">
     <input type="email" name="email" placeholder="Enter Email" required>
     <input type="password" name="password" placeholder="Enter Password" required>
     <input type="submit" value="Sign In">
+</form> -->
+
+
+<form action="/users/create-session" method="post">
+    <div class="login-form-bd">
+        <div class="form-wrapper">
+            <div class="form-container">
+                <h1> Please Login</h1>
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="email"  required>
+                        <label> Email</label>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" name="password"  required>
+                        <label> Password</label>
+                    </div>
+                    <button class="login-btn">Login</button>
+                    <p class="text">Don't have an account? <a href="#"> Register</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
 </form>
