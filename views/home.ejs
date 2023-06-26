@@ -1,16 +1,31 @@
 
     
-        <h1>
+        <h1 id="heading">
             Codial / <%= title %>
         </h1>
 
         <sectio id="feed-post">
             <h4>Post</h4>
             <form action="/posts/create" id="new-post-form" method="post">
-                <textarea name="content" id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+                <textarea name="content" id="" cols="30" rows="5" placeholder="Type here..."></textarea>
                 <input type="submit" value="Post">
             </form>
         </sectio>
+
+        <div id="posts-list-container">
+            <ul>
+                <%  for(post of posts) { %>
+                    <li>
+                        <%= post.content %>
+                        <br>
+                        <small>
+                        <%= post.user.name %>
+
+                        </small>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
        
 
     
