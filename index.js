@@ -3,6 +3,8 @@ const cookieParser = require('cookie-parser');// create cookie
 // const router = require('./routes'); This line written by mistake thats why i am getting error while i am trying to authenticate through passport
 const app = express();
 const port = 8000;
+// This is for use layouts in pages 
+const expressLayouts = require('express-ejs-layouts');
 
 app.use(express.urlencoded());
 app.use(cookieParser());
@@ -14,8 +16,7 @@ const passportLocal = require('./config/passport-local-strategy');
 
 const MongoStore = require('connect-mongo'); // this is for connect mongodb for store cookies
 
-// This is for use layouts in pages 
-const expressLayouts = require('express-ejs-layouts');
+
 
 app.use(express.static('./assets'));
 app.use(expressLayouts);
