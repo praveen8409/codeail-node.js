@@ -1,7 +1,17 @@
-#heading {
+#home-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#home-container #feed-post {
+  width: 70%;
+  padding: 10px;
+}
+#home-container #user-friends {
+  width: 30%;
+  padding: 10px;
+  border-left: 1px solid lightgray;
+  height: 100%;
 }
 
 /*# sourceMappingURL=home.css.map */
