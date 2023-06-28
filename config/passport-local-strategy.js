@@ -6,17 +6,21 @@ const cookieParser = require('cookie-parser');
 // Authentication using passport
 
 passport.use(new LocalStrategy({
-    usernameField: 'email'
+    usernameField: 'email',
+    passReqToCallback: true
 },
-    function (email, password, done) {
+    function (req, email, password, done) {
         // find a user abd establish the identity
         User.findOne({ email: email }, function (err, user) {
             if (err) {
-                console.log('Error is finding User --> passport');
+                // console.log('Error is finding User --> passport');
+                req.flash('erorr', err);
+
                 return done(err);
             }
             if (!user || user.password != password) {
-                console.log('Invalid UserName / Password');
+                // console.log('Invalid UserName / Password');
+                req.flash('error','Invalid UserName / Password');
                 return done(null, false);
             }
             return done(null, user);
