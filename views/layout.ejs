@@ -11,6 +11,10 @@
         integrity="sha512-mgZL3SZ/vIooDg2mU2amX6NysMlthFl/jDbscSRgF/k3zmICLe6muAs7YbITZ+61FeUoo1plofYAocoR5Sa1rQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -36,39 +40,39 @@
 
             <%}%> -->
 
-                <main id="layout-main">
-                    <%- body %>
-                </main>
+        <main id="layout-main">
+            <%- body %>
+        </main>
 
-                <%- include('_footer'); %>
+        <%- include('_footer'); %>
 
 
-                    <%- script %>
-                        <script>
-                            <% if(flash.success && flash.success.length> 0) {%>
-                            new Noty({
-                                theme: 'relax',
-                                text: '<%= flash.success %>',
-                                type : 'success',
-                                layout : 'topRight',
-                                timeout : 1500
+            <%- script %>
+                <script>
+                            <% if (flash.success && flash.success.length > 0) {%>
+                        new Noty({
+                            theme: 'relax',
+                            text: '<%= flash.success %>',
+                            type: 'success',
+                            layout: 'topRight',
+                            timeout: 1500
 
-                            }).show();
+                        }).show();
                             <%}%>
 
-                            <% if(flash.error && flash.error.length> 0) {%>
-                            new Noty({
-                                theme: 'relax',
-                                text: '<%= flash.error %>',
-                                type : 'error',
-                                layout : 'topRight',
-                                timeout : 1500
+                            <% if (flash.error && flash.error.length > 0) {%>
+                        new Noty({
+                            theme: 'relax',
+                            text: '<%= flash.error %>',
+                            type: 'error',
+                            layout: 'topRight',
+                            timeout: 1500
 
-                            }).show();
+                        }).show();
                             <%}%>
-                        </script>
-                        <script src="/js/user-sign-in.js"></script>
-                        <script src="/js/user-sign-up.js"></script>
+                </script>
+                <script src="/js/user-sign-in.js"></script>
+                <script src="/js/user-sign-up.js"></script>
 
 </body>
 
