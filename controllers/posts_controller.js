@@ -82,6 +82,7 @@ module.exports.destroy = async function(req, res){
                 },
                 message : "Post Deleted"
             });
+            
            }
 
         req.flash('success','Post and associated comments deleted');
