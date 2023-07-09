@@ -63,3 +63,15 @@ openSignIn = () =>{
 // When a 'switch' button is pressed, switch page
 openSignUpButton.addEventListener("click", openSignUp, false);
 openSignInButton.addEventListener("click", openSignIn, false);
+
+// const google = document.querySelector('.google');
+// google.addEventListener('click', ()=>{
+//   window.location.href = '/users/auth/google';
+// });
+
+const googles = document.querySelectorAll('.google');
+for(let google of googles){
+  google.addEventListener('click', ()=>{
+    window.location.href = '/users/auth/google';
+  });
+}
