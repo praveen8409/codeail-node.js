@@ -1,5 +1,6 @@
 const express = require('express');
 const env = require('./config/environment');
+const logger = require('morgan');
 const cookieParser = require('cookie-parser');// create cookie
 // const router = require('./routes'); This line written by mistake thats why i am getting error while i am trying to authenticate through passport
 const app = express();
@@ -36,6 +37,9 @@ const path = require('path');
 app.use(express.static(env.asset_path));
 // Make the upload path available to the browser
 app.use('/uploads',express.static(__dirname + '/uploads'));
+
+app.use(logger(env.morgan.mode, env.morgan.options));
+
 app.use(expressLayouts);
 
 // extract style and script from sub pages into the layout
