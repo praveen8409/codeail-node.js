@@ -50,24 +50,21 @@ app.set('view engine','ejs');
 app.set('views', './views');
 
 //mongo store is used to store the session cookies in db
-app.use(session({name : 'codeial',
-    // todo change the secret before deployment in product mode
-    
-    secret :  env.session_cookie_key,
-    saveUninitialized : false,
-    resave : false,
-    cookie : {
-        maxAge : (1000 * 60 * 100)
-    },
-    store: MongoStore.create({
-        mongoUrl: 'mongodb://127.0.0.1/codeial_development',
-        autoRemove: 'disabled'
-    }),
-    function(err){
-        console.log(err||'connect-mongo-db');
-    }
-}));
-
+app.use(
+    session({
+      name: 'codeial',
+      secret: env.session_cookie_key, // Make sure you have the correct environment variable set for this key
+      saveUninitialized: false,
+      resave: false,
+      cookie: {
+        maxAge: 1000 * 60 * 100, // 100 minutes (change as needed)
+      },
+      store: MongoStore.create({
+        mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
+        autoRemove: 'disabled',
+      }),
+    })
+  );
 app.use(passport.initialize());
 app.use(passport.session());
 
