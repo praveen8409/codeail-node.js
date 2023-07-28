@@ -4,6 +4,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');// create cookie
 // const router = require('./routes'); This line written by mistake thats why i am getting error while i am trying to authenticate through passport
 const app = express();
+require('./config/view-helpers')(app);
 const port = 8000;
 // This is for use layouts in pages 
 const expressLayouts = require('express-ejs-layouts');
@@ -37,7 +38,8 @@ const path = require('path');
 app.use(express.static(env.asset_path));
 // Make the upload path available to the browser
 app.use('/uploads',express.static(__dirname + '/uploads'));
-
+app.use(express.static('public/assets'));
+app.use(express.static('assets'))
 app.use(logger(env.morgan.mode, env.morgan.options));
 
 app.use(expressLayouts);
