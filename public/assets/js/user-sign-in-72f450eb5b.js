@@ -1,0 +1,1 @@
+const labels=document.querySelectorAll(".form-control label");labels.forEach((l=>{l.innerHTML=l.innerText.split("").map(((l,e)=>`<span style="transition-delay:${50*e}ms">${l}</span>`)).join("")}));
