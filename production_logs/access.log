@@ -400,3 +400,5 @@
 [0mPOST /users/create-session [36m302[0m 52.307 ms - 46[0m
 [0mGET / [32m200[0m 187.136 ms - 9690[0m
 [0mGET /users/profile/64a7aa3b99466d2730909e8d [32m200[0m 46.719 ms - 3411[0m
+[0mGET /users/sign-up [36m302[0m 11.075 ms - 72[0m
+[0mGET /users/profile [33m404[0m 16.620 ms - 152[0m
