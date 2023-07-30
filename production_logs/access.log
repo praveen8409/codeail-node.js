@@ -421,3 +421,8 @@
 [0mGET / [32m200[0m 1786.662 ms - 13273[0m
 [0mPOST /posts/create [32m200[0m 49.841 ms - 268[0m
 [0mPOST /posts/create [32m200[0m 64.290 ms - 268[0m
+[0mGET / [32m200[0m 2167.597 ms - 11429[0m
+[0mGET /favicon.ico [33m404[0m 623.086 ms - 150[0m
+[0mGET /users/sign-in [32m200[0m 54.480 ms - 3708[0m
+[0mPOST /users/create-session [36m302[0m 339.396 ms - 46[0m
+[0mGET / [32m200[0m 65.797 ms - 17629[0m
