@@ -66,7 +66,7 @@ app.use(
         maxAge: 1000 * 60 * 100, // 100 minutes (change as needed)
       },
       store: MongoStore.create({
-        mongoUrl: 'mongodb://127.0.0.1/codeial_development', // Replace this with your actual MongoDB connection string
+        mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
         autoRemove: 'disabled',
       }),
     })
