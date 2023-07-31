@@ -437,6 +437,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [0mGET /users/sign-up [32m200[0m 299.200 ms - 6982[0m
 [0mPOST /users/create [36m302[0m 564.970 ms - 72[0m
 [0mGET /users/sign-in [36m304[0m 27.393 ms - -[0m
@@ -515,3 +516,5 @@
 >>>>>>> parent of 36683016 (change the local database to Cloud mongodb)
 =======
 >>>>>>> parent of 36683016 (change the local database to Cloud mongodb)
+=======
+>>>>>>> parent of 5b447d0b ( Mongo url changed in index.js)
