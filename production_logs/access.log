@@ -518,3 +518,16 @@
 >>>>>>> parent of 36683016 (change the local database to Cloud mongodb)
 =======
 >>>>>>> parent of 5b447d0b ( Mongo url changed in index.js)
+[0mGET / [32m200[0m 7216.541 ms - 6130[0m
+[0mGET /favicon.ico [33m404[0m 5156.728 ms - 150[0m
+[0mGET /users/profile/64c67baa0724e68649d75c80 [36m302[0m 18.420 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 38.168 ms - 3708[0m
+[0mPOST /users/create-session [36m302[0m 1388.566 ms - 46[0m
+[0mGET / [32m200[0m 3641.751 ms - 9255[0m
+[0mGET / [32m200[0m 1152.233 ms - 6130[0m
+[0mGET /users/sign-in [36m304[0m 269.362 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 1161.941 ms - 46[0m
+[0mGET / [32m200[0m 2826.580 ms - 9255[0m
+[0mGET /posts/destroy/64c79fa13fa1c01748aad287 [32m200[0m 1473.193 ms - 72[0m
+[0mGET /posts/destroy/64c79fa13fa1c01748aad287 [36m302[0m 799.417 ms - 44[0m
+[0mGET / [32m200[0m 1247.359 ms - 6934[0m
