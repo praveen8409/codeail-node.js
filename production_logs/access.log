@@ -531,3 +531,10 @@
 [0mGET /posts/destroy/64c79fa13fa1c01748aad287 [32m200[0m 1473.193 ms - 72[0m
 [0mGET /posts/destroy/64c79fa13fa1c01748aad287 [36m302[0m 799.417 ms - 44[0m
 [0mGET / [32m200[0m 1247.359 ms - 6934[0m
+[0mGET / [32m200[0m 1458.776 ms - 7273[0m
+[0mGET / [32m200[0m 1225.615 ms - 6934[0m
+[0mGET /users/sign-out [36m302[0m 977.088 ms - 72[0m
+[0mGET /users/sign-up [32m200[0m 1534.225 ms - 7419[0m
+[0mPOST /users/create-session [36m302[0m 986.691 ms - 46[0m
+[0mGET / [32m200[0m 1219.268 ms - 7377[0m
+[0mGET / [32m200[0m 1982.624 ms - 6934[0m
