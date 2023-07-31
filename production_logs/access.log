@@ -426,6 +426,7 @@
 [0mGET /users/sign-in [32m200[0m 54.480 ms - 3708[0m
 [0mPOST /users/create-session [36m302[0m 339.396 ms - 46[0m
 [0mGET / [32m200[0m 65.797 ms - 17629[0m
+<<<<<<< HEAD
 [0mGET /users/sign-out [36m302[0m 393.662 ms - 72[0m
 [0mGET /users/sign-up [32m200[0m 187.011 ms - 7419[0m
 [0mPOST /users/create-session [36m302[0m 20.074 ms - 46[0m
@@ -509,3 +510,5 @@
 >>>>>>> parent of 5b447d0b ( Mongo url changed in index.js)
 =======
 >>>>>>> parent of 5b447d0b ( Mongo url changed in index.js)
+=======
+>>>>>>> parent of 36683016 (change the local database to Cloud mongodb)

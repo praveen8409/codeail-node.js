@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 const env = require('./environment');
+<<<<<<< HEAD
 // mongoose.connect(`mongodb://0.0.0.0/${env.db}`);
 mongoose.connect('mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/test?retryWrites=true&w=majority')
+=======
+mongoose.connect(`mongodb://0.0.0.0/${env.db}`);
+>>>>>>> parent of 36683016 (change the local database to Cloud mongodb)
 // mongoose.connect('mongodb://0.0.0.0/codeial_development');
 
 const db = mongoose.connection;
