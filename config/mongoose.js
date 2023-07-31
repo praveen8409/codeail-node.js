@@ -3,7 +3,7 @@ const env = require('./environment');
 
 
 // mongoose.connect(`mongodb://0.0.0.0/${env.db}`);
-mongoose.connect('mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/test?retryWrites=true&w=majority');
 
 // mongoose.connect(`mongodb://0.0.0.0/${env.db}`);
 
