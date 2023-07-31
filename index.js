@@ -21,6 +21,7 @@ const passportJWT = require('./config/passport-jwt-strategy');
 const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
 const MongoStore = require('connect-mongo'); // this is for connect mongodb for store cookies
+
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
 
@@ -67,7 +68,7 @@ app.use(
       },
       store: MongoStore.create({
         // mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
-        mongoUrl : 'mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/?retryWrites=true&w=majority',
+        mongoUrl : 'mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/test?retryWrites=true&w=majority',
         autoRemove: 'disabled',
       }),
     })

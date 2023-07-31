@@ -460,3 +460,10 @@
 [0mGET / [32m200[0m 2493.577 ms - 9259[0m
 [0mPOST /posts/create [32m200[0m 1055.298 ms - 260[0m
 [0mPOST /posts/create [32m200[0m 1065.078 ms - 260[0m
+[0mGET /users/profile/64c67baa0724e68649d75c80 [32m200[0m 2766.184 ms - 3322[0m
+[0mGET / [32m200[0m 1390.294 ms - 12568[0m
+[0mPOST /likes/toggle/?id=64c795eaf542d0b62ae2dc49&type=Post [32m200[0m 1333.333 ms - 58[0m
+[0mPOST /likes/toggle/?id=64c795eaf542d0b62ae2dc47&type=Post [32m200[0m 1428.886 ms - 58[0m
+[0mGET / [32m200[0m 1428.050 ms - 12568[0m
+[0mPOST /posts/create [32m200[0m 1056.428 ms - 259[0m
+[0mPOST /posts/create [32m200[0m 2294.458 ms - 259[0m
