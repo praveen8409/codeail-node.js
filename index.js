@@ -66,7 +66,7 @@ app.use(
       cookie: {
         maxAge: 1000 * 60 * 100, // 100 minutes (change as needed)
       },
-      store: MongoStore.create({
+      store: new  MongoStore({
         // mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
         mongoUrl : 'mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/test?retryWrites=true&w=majority',
         autoRemove: 'disabled',
