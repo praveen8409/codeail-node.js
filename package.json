@@ -16,7 +16,6 @@
   "author": "Praveen",
   "license": "ISC",
   "dependencies": {
-    "connect": "^3.7.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.0.0",
     "cookie-parser": "^1.4.4",
