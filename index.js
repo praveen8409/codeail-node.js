@@ -67,9 +67,14 @@ app.use(
         maxAge: 1000 * 60 * 100, // 100 minutes (change as needed)
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       store:  MongoStore.connect({
         // mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
         mongoUrl : 'mongodb+srv://codeial:codeial@cluster0.qd2uov1.mongodb.net/test?retryWrites=true&w=majority',
+=======
+      store: MongoStore.create({
+        mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
+>>>>>>> parent of 5b447d0b ( Mongo url changed in index.js)
 =======
       store: MongoStore.create({
         mongoUrl: 'mongodb://0.0.0.0/codeial_development', // Replace this with your actual MongoDB connection string
